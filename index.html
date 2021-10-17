@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Bellybutton Biodiversity</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.0/dist/spacelab/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
     <script src="samples.js"></script>
 </head>
 
@@ -20,24 +21,85 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-md-2" style="border: solid">
-                <div class="well">
-                    <h5>Test Subject ID No.:</h5>
-                    <select id="selDataset">
-                        <!-- Subject ID list from D3 -->
-                    </select>
-                </div>
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Demographic Info</h3>
+            <div class="col-md-3" style="border: solid">
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header text-white bg-primary">Test Subject ID:</div>
+                    <div class="card-body">
+                        <select id="selDataset">
+                            <!-- SubjectID list -->
+                        </select>
                     </div>
-                    <div id="sample-metadata" class="panel-body"></div>
+                </div>
+                <div class="card border-primary mb-3" style="max-width: 20rem;">
+                    <div class="card-header text-white bg-primary">Demographic Info</div>
+                    <div class="card-body">
+                        <table class="table table-sm table-hover">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        ID
+                                    </td>
+                                    <td id="id">
+                                        <!-- from D3 -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Ethnicity
+                                    </td>
+                                    <td id="ethnicity">
+                                        <!-- from D3 -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Gender
+                                    </td>
+                                    <td id="gender">
+                                        <!-- from D3 -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Age
+                                    </td>
+                                    <td id="age">
+                                        <!-- from D3 -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        City, State
+                                    </td>
+                                    <td id="location">
+                                        <!-- from D3 -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Belly Button Type
+                                    </td>
+                                    <td id="bbtype">
+                                        <!-- from D3 -->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Weekly Wash Freq.
+                                    </td>
+                                    <td id="wfreq">
+                                        <!-- from D3 -->
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-5" style="border: solid">
+            <div class="col-md-6" style="border: solid">
                 <div id="bar">Bar chart</div>
             </div>
-            <div class="col-md-5" style="border: solid">
+            <div class="col-md-3" style="border: solid">
                 <div id="gauge">Gauge</div>
             </div>
         </div>
