@@ -9,29 +9,34 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@5.1.0/dist/spacelab/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="samples.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 
 <body>
 
     <div class="container">
-        <div class="row">
+        <div class="row pb-5">
             <div class="col-md-12 jumbotron text-center">
                 <h1>Belly Button Biodiversity Dashboard</h1>
-                <p>Use the interactive charts below to explore the dataset</p>
+                <h5>Use the interactive charts below to explore the dataset</h5>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-3" style="border: solid">
-                <div class="card border-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header text-white bg-primary">Test Subject ID:</div>
+        <div class="row pb-3">
+            <div class="col-md-4">
+                <div class="card border-primary mb-3" style="max-width: 25rem;">
+                    <div class="card-header text-white bg-primary">
+                        Test Subject ID:
+                    </div>
                     <div class="card-body">
                         <select id="selDataset">
                             <!-- SubjectID list -->
                         </select>
                     </div>
                 </div>
-                <div class="card border-primary mb-3" style="max-width: 20rem;">
-                    <div class="card-header text-white bg-primary">Demographic Info</div>
+                <div class="card border-primary mb-3" style="max-width: 25rem;">
+                    <div class="card-header text-white bg-primary">
+                        Demographic Info
+                    </div>
                     <div class="card-body">
                         <table class="table table-sm table-hover">
                             <tbody>
@@ -96,22 +101,36 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-6" style="border: solid">
-                <div id="bar">Bar chart</div>
-            </div>
-            <div class="col-md-3" style="border: solid">
-                <div id="gauge">Gauge</div>
+            <div class="col-md-8">
+                <div class="card border-primary mb-3">
+                    <div class="card-header text-white bg-primary">
+                        Bar Chart
+                    </div>
+                    <div class="card-body">
+                        <div id="bar">
+                            <!-- Plotly bar chart -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12" style="border: solid">
-                <div id="bubble">Bubble chart</div>
+            <div class="col-md-12">
+                <div class="card border-primary mb-3">
+                    <div class="card-header text-white bg-primary">
+                        Bubble Chart
+                    </div>
+                    <div class="card-body">
+                        <div id="bubble">
+                            <!-- Plotly bubble chart -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
     <script src="./static/js/app.js"></script>
 
 </body>
